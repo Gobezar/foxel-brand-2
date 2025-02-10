@@ -1,0 +1,36 @@
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BF252B !important;
+    color: #F5F5F5 !important;
+    padding: 10px !important;
+    border-radius: 35px !important;
+    border: none !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    font-family: var(--raleway) !important;
+
+    &.onlyIcon {
+        width: 96px;
+        height: 96px;
+        border-radius: 50% !important;
+    }
+}
+
+.linkButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px !important;
+    border-radius: 50% !important;
+    background-color: #ffff !important;
+
+    &:hover {
+        border: none;
+        -webkit-box-shadow: 0px 0px 5px 6px rgba(0, 4, 7, 0.2);
+        -moz-box-shadow: 0px 0px 5px 6px rgba(0, 4, 7, 0.2);
+        box-shadow: 0px 0px 5px 6px rgba(0, 4, 7, 0.2);
+    }
+}

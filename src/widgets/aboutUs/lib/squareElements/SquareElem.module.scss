@@ -1,0 +1,34 @@
+
+.bluredText {
+    width: 100%;
+    height: 68px;
+    border-radius: 35px;
+    background-color: #3B3B3B42;
+    backdrop-filter: blur(20px);
+    padding: 12px 30px;
+    line-height: 22px;
+}
+
+.linkButton {
+    position: absolute !important;
+    top: 16px;
+    right: 16px;
+}
+
+.squareHeader {
+    font-weight: 700;
+    font-size: 64px;
+    margin: -15px 0px 15px 0px
+}
+
+@media (max-width: 1200px) {
+    .bluredText {
+        line-height: 17px;
+        height: 75px;    
+    }
+
+    .squareHeader {
+        font-size: 32px !important;
+        margin: -5px 0px 5px 0px !important;
+    }
+}

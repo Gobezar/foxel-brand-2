@@ -1,0 +1,17 @@
+.container {
+    padding: 95px 39px 173px 0px;
+    background-color: #000000;
+    width: 100%;
+    color: #fff;
+
+    & .headerWrapper {
+        width: 100%;
+        padding-left: 92px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 64px;
+            max-width: 610px;
+        }
+    }
+}

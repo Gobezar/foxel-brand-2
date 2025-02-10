@@ -1,0 +1,5 @@
+export {StyledHeader as Header} from './header/UI/Header'
+export {AboutUs as AboutUs} from './aboutUs/UI/AboutUs'
+export {Popular as Popular} from './popular/UI/Popular'
+export {CustomersInfo as CustomersInfo} from './customersInfo/CustomersInfo'
+export {FrequentQuestions as FrequentQuestions} from './frequentQuestions/FrequentQuestions'

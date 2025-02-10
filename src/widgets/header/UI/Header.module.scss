@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    user-select: none; /* Современные браузеры */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    position: relative;
+
+     h1 {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+        font-weight: 700;
+        font-size: 128px;
+
+        & .firstH1 {
+            position: absolute;
+            left: 78px;
+            top: 150px;
+            white-space: nowrap;
+        }
+        & .secondH1 {
+            position: absolute;
+            align-self: flex-end;
+            left: 140px;
+            top: 260px;
+        }
+      }
+
+      & .foxelLogo {
+            position: absolute;
+            left: 530px;
+            top: 170px;
+      }
+      & .description {
+            position: absolute;
+            left: 76px;
+            top: 425px;
+            font-size: 24px;
+            font-weight: 500
+      }
+
+      & .orderButton {
+        position: absolute;
+        left: 75px;
+        bottom: 240px;
+        width: 283px;
+        height: 54px
+      }
+
+      & .actionsButtonWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 84px;
+        bottom: 92px;
+
+        & .catalogButton {
+            margin-right: 260px;
+        }
+        span {
+                font-size: 24px;
+                font-weight: 400px;
+                margin-right: 55px
+            }
+      }
+}

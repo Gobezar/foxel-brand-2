@@ -1,0 +1,93 @@
+.container {
+
+    padding: 95px 75px 95px 92px;
+    background-color: #000000;
+    width: 100%;
+    color: #fff;
+
+    & .headerWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+        & h2 {
+            font-weight: 700;
+                font-size: 64px;
+                color: #fff;
+                margin-bottom: 179px;
+        }
+    }
+
+    & .guarantee, & .safety {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        & .textBlock {
+            width: 40%;
+            height: 281px;
+
+            h3 {
+                font-weight: 600;
+                font-size: 64px;
+                margin-bottom: 41px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+
+        & .imageBlock {
+            width: 40%;
+            height: 281px;
+            
+        }
+        & .imageBg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            border-radius: 35px;
+            background-color: #D6D6D6;
+            border-radius: 35px;
+
+
+        }
+    }
+
+    & .guarantee {
+        position: relative;
+
+        & .imageBlock {
+            position: relative;
+
+            & .dashedArrowSafety {
+                position: absolute;
+                bottom: -120px;
+                left: 135px ;
+            }
+        }
+
+        
+    }
+
+    & .safety {
+
+        & .imageBlock {
+            position: relative;
+
+            & .dashedArrowGuarantee {
+                position: absolute;
+                top: -70px;
+                right: -50px;
+                transform: rotate(231deg)
+            }
+
+        }
+      
+        
+    }
+
+}

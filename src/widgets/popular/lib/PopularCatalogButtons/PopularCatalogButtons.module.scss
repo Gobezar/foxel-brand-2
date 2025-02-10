@@ -1,0 +1,49 @@
+.buttonBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    &:hover {
+        -webkit-box-shadow: 0px 0px 12px 4px rgba(227, 227, 227, 0.3) ;
+        -moz-box-shadow: 0px 0px 12px 4px rgba(227, 227, 227, 0.3) ;
+        box-shadow: 0px 0px 12px 4px rgba(227, 227, 227, 0.3) ;
+    }
+}
+
+.buttonForward {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 75px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    &:hover {
+        -webkit-box-shadow: 0px 0px 12px 4px rgba(227, 227, 227, 0.3) ;
+        -moz-box-shadow: 0px 0px 12px 4px rgba(227, 227, 227, 0.3) ;
+        box-shadow: 0px 0px 12px 4px rgba(227, 227, 227, 0.3) ;
+    }
+}
+
+
+.buttonAction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37px;
+    width: 155px;
+    border-radius: 35px;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        -webkit-box-shadow: 0px 0px 12px 4px rgba(227, 227, 227, 0.3) ;
+        -moz-box-shadow: 0px 0px 12px 4px rgba(227, 227, 227, 0.3) ;
+        box-shadow: 0px 0px 12px 4px rgba(227, 227, 227, 0.3) ;
+    }
+}

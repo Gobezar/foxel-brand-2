@@ -1,0 +1,168 @@
+.container {
+    display: grid ;
+    grid-template-columns: repeat(4, 320px) ;
+    gap: 9px;
+    justify-content: start;
+    margin-bottom: 196px;
+}
+
+.squareElem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 313px;
+    height: 320px;
+    border-radius: 35px;
+    padding: 16px;
+    color: white;
+    overflow: hidden;
+    font-size: 16px;    
+
+    & .squareHeader {
+        font-weight: 700;
+        font-size: 64px;
+        margin: -15px 0px 15px 0px
+    }
+
+    &.id1_3,&.id2_2,&.id2_3 {
+        border: 1px solid #fff;
+    }
+    &.id1_2  {
+        background: url(../../../../public/aboutUs-2.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+    }
+    
+    &.id2_1 {
+        background: url(../../../../public/aboutUs-1.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+    }
+    &.id1_1,&.id1_3,&.id2_2,&.id2_3 {
+        justify-content: space-between;
+    }
+    &.id1_2,&.id2_1 {
+        justify-content: end;
+    }
+    & .id1_1 {
+        line-height: 22px;
+    }
+    & .id1_1_text_1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    & .id1_1_text_2 {
+        font-weight: 300;
+    }
+}
+
+.verticalSquareWrapper {
+    grid-row: span 2;
+    position: relative;
+    & .id3 {
+        justify-content: end;
+    }
+    & .verticalSquare {
+        display: flex;
+        flex-direction: column;
+        width: 324px;
+        height: 649px;
+        border-radius: 35px;
+        padding: 16px;
+        background: url(../../../../public/aboutUs-3.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        color: white;
+    }
+    & .bluredText {
+        width: 100%;
+        height: 68px;
+        border-radius: 35px;
+        background-color: #3B3B3B42;
+        backdrop-filter: blur(20px);
+        padding: 12px 30px;
+        line-height: 22px;
+    }
+    & .linkButton {
+        position: absolute !important;
+        top: 16px;
+        right: 16px;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .container {
+        grid-template-columns: repeat(4, 280px) ;
+    }
+    .squareElem {
+        width: 280px;
+        height: 273px;
+    }
+    .verticalSquare {
+        width: 280px !important;
+        height: 555px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(4, 230px) ;
+    }
+
+    .id1_1_text_1 {
+        font-size: 22px !important;
+    }
+    .squareElem {
+        width: 230px;
+        height: 223px;
+        font-size: 14px
+    }
+    .squareHeader {
+        font-size: 32px !important;
+        margin: 0 !important;
+    }
+
+    .verticalSquare {
+        width: 230px !important;
+        height: 446px !important;
+        .bluredText {
+            height: 75px;
+            line-height: 17px;
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: repeat(3, 230px) ;
+    }
+    .verticalSquareWrapper {
+        grid-row: span 1;
+
+        & .verticalSquare {
+            width: 230px !important;
+            height: 223px !important;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 230px) ;
+    }    
+}
+
+@media (max-width: 576px) {
+    .container {
+        grid-template-columns: repeat(1, 230px) ;
+    }    
+}
