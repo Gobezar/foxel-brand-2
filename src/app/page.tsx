@@ -1,6 +1,12 @@
 "use client";
 
-import { AboutUs, CustomersInfo, FrequentQuestions, Popular } from "@/widgets";
+import {
+  AboutUs,
+  CustomersInfo,
+  FrequentQuestions,
+  Popular,
+  Reviews,
+} from "@/widgets";
 
 export default function Home() {
   return (
@@ -16,6 +22,7 @@ export default function Home() {
       <Popular />
       <CustomersInfo />
       <FrequentQuestions />
+      <Reviews />
     </div>
   );
 }

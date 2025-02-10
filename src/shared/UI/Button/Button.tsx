@@ -6,6 +6,8 @@ import cl from "./Button.module.scss";
 import { raleway } from "@/config/fonts";
 import ArrowTopRight from "@/shared/icons/ArrowTopRight";
 import { Button } from "@heroui/react";
+import ArrowLeftIcon from "@/shared/icons/ArrowLeftIcon";
+import ArrowRightIcon from "@/shared/icons/ArrowRightIcon";
 
 interface CustomButtonProps {
   onlyIcon?: boolean;
@@ -38,6 +40,22 @@ export const LinkButton = ({
   return (
     <div className={clsx(cl.linkButton, className)} onClick={onClick}>
       <ArrowTopRight />
+    </div>
+  );
+};
+
+export const ButtonBack = ({ onClick }: { onClick: () => void }) => {
+  return (
+    <div className={cl.buttonBack} onClick={onClick}>
+      <ArrowLeftIcon />
+    </div>
+  );
+};
+
+export const ButtonForward = ({ onClick }: { onClick: () => void }) => {
+  return (
+    <div className={cl.buttonForward} onClick={onClick}>
+      <ArrowRightIcon />
     </div>
   );
 };

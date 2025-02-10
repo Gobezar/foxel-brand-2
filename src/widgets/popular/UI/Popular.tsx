@@ -2,10 +2,7 @@
 
 import React, { useRef } from "react";
 import cl from "./Popular.module.scss";
-import {
-  ButtonBack,
-  ButtonForward,
-} from "../lib/PopularCatalogButtons/PopularCatalogButtons";
+
 import ProductCard from "@/widgets/productCard/ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
@@ -14,6 +11,7 @@ import "swiper/css";
 import "swiper/scss/keyboard";
 import { Keyboard, Mousewheel } from "swiper/modules";
 import Link from "next/link";
+import { ButtonBack, ButtonForward } from "@/shared";
 
 const popularHeader = "популярное";
 const catalogLinkText = "Перейти в каталог";
@@ -61,7 +59,11 @@ export const Popular = () => {
           // оставлено специально на потом(для адаптива)
         >
           {products.map((product) => (
-            <SwiperSlide key={product.id} style={{ width: "auto" }}>
+            <SwiperSlide
+              key={product.id}
+              style={{ width: "auto" }}
+              className="first:ml-[75px] last:mr-[75px]"
+            >
               <ProductCard
                 type={product.type}
                 brand={product.brand}

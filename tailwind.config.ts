@@ -103,18 +103,21 @@ module.exports = {
           foreground: '#ECEDEE',
           dangerFlat: '#F3126033',
         },
-
+        red: '#BF252B'
       },
       // пример использования как trilwind КЛАСС: text-xs или text-base
       fontSize: {
         xs: ['12px', { lineHeight: '18px', letterSpacing: '-0.02em' }], // Более плотный текст, улучшает читаемость на мелких размерах
         sm: ['14px', { lineHeight: '20px', letterSpacing: '-0.01em' }], // Лёгкая коррекция, чтобы текст не выглядел сжатым
         base: ['16px', { lineHeight: '24px', letterSpacing: '0em' }], // Универсальная настройка, оставляем без изменений
-        lg: ['20px', { lineHeight: '28px', letterSpacing: '0.005em' }], // Небольшая коррекция для комфортного восприятия
+        lg: ['20px', { lineHeight: '24px', letterSpacing: '0em' }], // Небольшая коррекция для комфортного восприятия
         xl: ['24px', { lineHeight: '32px', letterSpacing: '0.01em' }], // Оптимальное соотношение для крупных размеров
         '2xl': ['26px', { lineHeight: '38px', letterSpacing: '0.01em' }], // Увеличение высоты строки для большей лёгкости
         '3xl': ['30px', { lineHeight: '36px', letterSpacing: '0.015em' }], // Ещё больше пространства между строками для крупного текста
-        '4xl': ['36px', { lineHeight: '48px', letterSpacing: '0.02em' }], // Просторное оформление для заголовков
+        '4xl': ['32px', { lineHeight: '38px', letterSpacing: '0em' }], // Ещё больше пространства между строками для крупного текста
+        '5xl': ['36px', { lineHeight: '48px', letterSpacing: '0.02em' }], // Просторное оформление для заголовков
+        '6xl': ['64px', { lineHeight: '75px', letterSpacing: '0em' }], // Просторное оформление для заголовков
+
       },
 
       // пример использования как trilwind КЛАСС: font-thin или font-black
