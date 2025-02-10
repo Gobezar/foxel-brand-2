@@ -28,12 +28,16 @@ export const StyledButton: FC<
   );
 };
 
-export const LinkButton: FC<
-  ComponentProps<typeof Button> & CustomButtonProps
-> = ({ onClick, className }) => {
+export const LinkButton = ({
+  onClick,
+  className,
+}: {
+  onClick: () => void;
+  className: string;
+}) => {
   return (
-    <Button className={clsx(cl.linkButton, className)} onClick={onClick}>
+    <div className={clsx(cl.linkButton, className)} onClick={onClick}>
       <ArrowTopRight />
-    </Button>
+    </div>
   );
 };

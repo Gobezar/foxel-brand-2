@@ -77,7 +77,7 @@ export const AboutUs = () => {
       />
       {/* Большая ячейка на 2 строки */}
       <div className={cl.verticalSquareWrapper}>
-        <LinkButton className={cl.linkButton} />
+        <LinkButton onClick={() => console.log(1)} className={cl.linkButton} />
         <div className={clsx(cl.verticalSquare, cl.id3)}>
           <div className={cl.bluredText}>
             <span>{aboutUsTextCollection.id3.text_2}</span>

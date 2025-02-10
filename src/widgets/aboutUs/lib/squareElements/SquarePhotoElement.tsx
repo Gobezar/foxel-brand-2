@@ -10,7 +10,7 @@ interface Props {
 const SquarePhotoElement = ({ classNames, text }: Props) => {
   return (
     <div className={classNames}>
-      <LinkButton className={cl.linkButton} />
+      <LinkButton onClick={() => console.log(1)} className={cl.linkButton} />
       <div className={cl.bluredText}>
         <span>{text}</span>
       </div>

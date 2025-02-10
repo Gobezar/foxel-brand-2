@@ -22,10 +22,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 68px;
-    height: 68px !important;
-    border-radius: 50% !important;
-    background-color: #ffff !important;
+    width: 68px ;
+    height: 68px ;
+    border-radius: 50% ;
+    background-color: #ffff;
+    cursor: pointer;
+
+    svg {
+        width: 45px;
+        height: 45px;
+    }
 
     &:hover {
         border: none;
