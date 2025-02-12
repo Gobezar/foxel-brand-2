@@ -3,7 +3,7 @@ import "../../globals.css";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import { raleway } from "@/config/fonts";
-import { Header } from "@/widgets";
+import { Footer, Header } from "@/widgets";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,6 +26,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

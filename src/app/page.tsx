@@ -2,6 +2,7 @@
 
 import {
   AboutUs,
+  Contacts,
   CustomersInfo,
   FrequentQuestions,
   Popular,
@@ -23,6 +24,7 @@ export default function Home() {
       <CustomersInfo />
       <FrequentQuestions />
       <Reviews />
+      <Contacts />
     </div>
   );
 }

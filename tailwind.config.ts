@@ -111,7 +111,7 @@ module.exports = {
         sm: ['14px', { lineHeight: '20px', letterSpacing: '-0.01em' }], // Лёгкая коррекция, чтобы текст не выглядел сжатым
         base: ['16px', { lineHeight: '24px', letterSpacing: '0em' }], // Универсальная настройка, оставляем без изменений
         lg: ['20px', { lineHeight: '24px', letterSpacing: '0em' }], // Небольшая коррекция для комфортного восприятия
-        xl: ['24px', { lineHeight: '32px', letterSpacing: '0.01em' }], // Оптимальное соотношение для крупных размеров
+        xl: ['24px', { lineHeight: '33px', letterSpacing: '0em' }], // Оптимальное соотношение для крупных размеров
         '2xl': ['26px', { lineHeight: '38px', letterSpacing: '0.01em' }], // Увеличение высоты строки для большей лёгкости
         '3xl': ['30px', { lineHeight: '36px', letterSpacing: '0.015em' }], // Ещё больше пространства между строками для крупного текста
         '4xl': ['32px', { lineHeight: '38px', letterSpacing: '0em' }], // Ещё больше пространства между строками для крупного текста
