@@ -3,7 +3,7 @@ import "../../globals.css";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import { raleway } from "@/config/fonts";
-import { Footer, Header } from "@/widgets";
+import { Header } from "@/widgets";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
@@ -26,7 +26,6 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
-          <Footer />
         </Providers>
       </body>
     </html>

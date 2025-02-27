@@ -1,6 +1,5 @@
 .container {
-    width: 318px;
-
+    width: 318px;    
 
     & .cardWrapper {
         width: 100%;
@@ -19,6 +18,12 @@
         margin-bottom: 15px
     }
 
+    & .cardNameWrapper {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     & .cardInfoWrapper {
         display: flex;
         justify-content: space-between;
@@ -34,5 +39,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 8px; 
     }
 }

@@ -4,6 +4,7 @@ import {
   AboutUs,
   Contacts,
   CustomersInfo,
+  Footer,
   FrequentQuestions,
   Popular,
   Reviews,
@@ -25,6 +26,7 @@ export default function Home() {
       <FrequentQuestions />
       <Reviews />
       <Contacts />
+      <Footer />
     </div>
   );
 }
