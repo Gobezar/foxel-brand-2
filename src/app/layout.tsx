@@ -16,13 +16,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
-          raleway.className
-        )}
-      >
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={clsx(
+        "min-h-screen bg-background font-sans antialiased dark",
+        raleway.className
+      )}
+    >
+      <body>
         <Providers>
           <Header />
           {children}

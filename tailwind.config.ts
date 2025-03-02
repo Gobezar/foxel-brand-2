@@ -1,11 +1,12 @@
 
 /** @type {import('tailwindcss').Config} */
+import {heroui} from "@heroui/react";
+
 
 module.exports = {
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
@@ -147,4 +148,5 @@ module.exports = {
       },
     },
   },
+  plugins: [heroui()]
 };

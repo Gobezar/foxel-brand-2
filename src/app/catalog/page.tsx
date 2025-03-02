@@ -12,7 +12,7 @@ export default function Catalog() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <div className="max-w-8xl h-full w-full mt-[50px] px-[78px] lg:px-[78px]">
+    <div className="max-w-8xl w-full mt-[50px] px-[78px] lg:px-[78px]">
       <div className="flex gap-x-6">
         <SidebarDrawer isOpen={isOpen} onOpenChange={onOpenChange}>
           <FiltersWrapper

@@ -66,7 +66,7 @@ const item: ProductViewItem = {
 
 export default function Product() {
   return (
-    <div className="max-w-8xl h-full w-full px-[78px] lg:px-[78px] mt-[50px]">
+    <div className="max-w-8xl  w-full px-[78px] lg:px-[78px] mt-[50px]">
       <ProductViewInfo {...item} />
     </div>
   );
