@@ -49,15 +49,6 @@ const ShippingForm = React.forwardRef<HTMLDivElement, ShippingFormProps>(
         <div className="flex flex-wrap items-center gap-4 sm:flex-nowrap">
           <Input
             isRequired
-            label="Улица, дом, квартира"
-            labelPlacement="outside"
-            placeholder="ул. Пушкина, д. 1, кв. 1"
-            variant={variant}
-          />
-        </div>
-        <div className="flex flex-wrap items-center gap-4 sm:flex-nowrap">
-          <Input
-            isRequired
             label="Город"
             labelPlacement="outside"
             placeholder="Воронеж"
@@ -89,6 +80,31 @@ const ShippingForm = React.forwardRef<HTMLDivElement, ShippingFormProps>(
             )}
           </Autocomplete>
         </div>
+        <div className="flex flex-wrap items-center gap-4 sm:flex-nowrap">
+          <Input
+            isRequired
+            label="Улица"
+            labelPlacement="outside"
+            placeholder="ул. Пушкина"
+            variant={variant}
+          />
+          <Input
+            isRequired
+            label="Номер дома"
+            labelPlacement="outside"
+            placeholder="11"
+            type="number"
+            variant={variant}
+          />
+          <Input
+            label="Номер квартиры"
+            labelPlacement="outside"
+            placeholder="143"
+            type="number"
+            variant={variant}
+          />
+        </div>
+
         <div className="flex flex-wrap items-center gap-4 sm:flex-nowrap">
           <Input
             isRequired
